@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --c-black:#16161D;
+  --c-font-white:#F8F8F8;
+  --c-purple:#ab3ed8;
+  --c-purple-gray:#d8bdd8;
+}
+
+*{
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  box-sizing: border-box;
+  background: var(--c-black);
+  color: var(--c-purple-gray);
+}
+
+.source-sans{
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer utilities {
+  .br-gray{
+    border-color: var(--c-purple-gray);
+  }
+}
