@@ -6,15 +6,15 @@
   --c-font-white:#F8F8F8;
   --c-purple:#ab3ed8;
   --c-purple-gray:#d8bdd8;
+  --c-purple-black:#29192eaa;
+  --c-purple-black-secondary:#29192ee3;
 }
 
 *{
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
   box-sizing: border-box;
+}
+html{
   background: var(--c-black);
-  color: var(--c-purple-gray);
 }
 
 .source-sans{
@@ -32,7 +32,25 @@
 }
 
 @layer utilities {
+  .font-color-white{
+    color: var(--c-font-white);
+  }
+  .font-color-gray{
+    color: var(--c-purple-gray);
+  }
+  .font-c-purple{
+    color: var(--c-purple);
+  }
   .br-gray{
     border-color: var(--c-purple-gray);
+  }
+  .bg-c-black{
+    background-color: var(--c-black);
+  }
+  .bg-purple-black{
+    background-color: var(--c-purple-black);
+  }
+  .hover\:bg-purple-black:hover {
+    background-color: var(--c-purple-black-secondary);
   }
 }
