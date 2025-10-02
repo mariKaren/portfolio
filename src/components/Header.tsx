@@ -18,14 +18,21 @@ export default function Header() {
     ];
 
     return (
-        <header className="fixed top-0 backdrop-blur-md left-0 w-full shadow-lg z-50 source-sans">
+        <header className="fixed top-0 backdrop-blur-md left-0 w-full shadow-lg z-50 font-secondary">
             <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
-                
-                {/* Logo o Nombre */}
-                <h1 className="text-xl font-bold playfair-display font-color-gray tracking-wide">Karen Mari</h1>
+                {/*Nombre */}
+                <Link
+                    to="hero"
+                    smooth={true}
+                    duration={1000}
+                    offset={-80}
+                    className="text-xl font-bold font-primary fc-gray tracking-wide cursor-pointer"
+                    >
+                    Karen Mari
+                </Link>
 
                 {/* Links - desktop */}
-                <nav className="hidden md:flex gap-8 font-color-white">
+                <nav className="hidden md:flex gap-8 fc-white">
                     {links.map((link) => (
                         <Link
                             key={link.name}
@@ -34,8 +41,8 @@ export default function Header() {
                             duration={1200}
                             offset={-80} // compensa el header fijo
                             spy={true} 
-                            className="cursor-pointer transition-colors"
-                            activeClass="font-bold font-c-purple"
+                            className="cursor-pointer hover:fc-gray"
+                            activeClass="font-bold fc-purple"
                             >
                             {link.name}
                             </Link>
@@ -44,7 +51,7 @@ export default function Header() {
 
                 {/* Botón menú mobile */}
                 <button
-                className="md:hidden font-color-gray"
+                className="md:hidden fc-gray"
                 onClick={() => setOpen(!open)}
                 >
                 {open ? <X size={28} /> : <Menu size={28} />}
@@ -54,7 +61,7 @@ export default function Header() {
             {/* Menú desplegable mobile */}
             {open && (
                 <div className="md:hidden shadow-md bg-black/70 backdrop-blur-md rounded-lg p-4 mx-4">
-                    <nav className="flex flex-col items-center gap-4 font-color-white">
+                    <nav className="flex flex-col items-center gap-4 fc-white">
                         {links.map((link) => (
                         <Link
                             key={link.name}
@@ -65,7 +72,7 @@ export default function Header() {
                             spy={true}
                             onClick={() => setOpen(false)}
                             className="cursor-pointer w-full text-center py-3 bg-purple-black rounded-lg hover:bg-purple-black font-semibold"
-                            activeClass="font-bold font-c-purple"
+                            activeClass="font-bold fc-purple"
                         >
                             {link.name}
                         </Link>
