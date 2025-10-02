@@ -41,7 +41,7 @@ export default function Header() {
                             duration={1200}
                             offset={-80} // compensa el header fijo
                             spy={true} 
-                            className="cursor-pointer hover:fc-gray"
+                            className="cursor-pointer relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-gray-200 hover:after:shadow-[0_0_10px_2px_#9333ea] after:transition-all after:duration-800 hover:after:w-full"
                             activeClass="font-bold fc-purple"
                             >
                             {link.name}
