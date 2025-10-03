@@ -8,7 +8,7 @@ export default function Hero() {
         id="hero"
         className="min-h-screen flex flex-col justify-center items-center text-center px-6 fc-white font-secondary"
         >
-            <h1 className="text-4xl md:text-6xl font-bold mb-10 font-primary">Full Stack Developer</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-10 font-primary">Full Stack Developer</h1>
 
             {/* Botones principales */}
             <div className="flex flex-wrap justify-center gap-6 mb-10">
