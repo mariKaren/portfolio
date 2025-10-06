@@ -34,7 +34,7 @@ export function ProjectCard({
 
     return (
         <motion.div
-        className="border border-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-[0_0_10px_#9333ea] transition-all max-w-2xl mx-auto"
+        className="border border-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-[0_0_10px_#9333ea] transition-all duration-500 max-w-2xl mx-auto"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -58,17 +58,17 @@ export function ProjectCard({
                     ))}
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-4 pt-4">
+                <div className="flex flex-wrap justify-center gap-4 sm:gap-6 pt-4 text-base">
                     <button
                         onClick={() => window.open(githubUrl, "_blank")}
-                        className="px-4 py-2 bg-gray-800 rounded-md hover:bg-gray-700 transition"
+                        className="min-w-[140px] max-w-[200px] sm:w-full px-4 py-2 bg-gray-800 rounded-md hover:bg-gray-700 transition text-center"
                     >
                         Ver en GitHub
                     </button>
 
                     <button
                         onClick={handleDemoClick}
-                        className="px-4 py-2 bg-c-purple rounded-md hover:bg-purple-secondary transition"
+                        className="min-w-[140px] max-w-[200px] sm:w-full px-4 py-2 bg-c-purple rounded-md hover:bg-purple-secondary transition text-center"
                     >
                         Ver demo
                     </button>
