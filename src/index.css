@@ -4,7 +4,6 @@
 :root {
   --c-black:#16161D;
   --c-font-white:#efe8f1;
-  --c-purple-header:#ab3ed8;
   --c-purple-primary:#9333EA;
   --c-purple-secondary:#731cbe;
   --c-purple-gray:#d8bdd8;
@@ -45,9 +44,6 @@ html{
   .fc-purple{
     color: var(--c-purple-primary);
   }
-  /* .br-gray{
-    border-color: var(--c-purple-gray);
-  } */
   .bg-c-black{
     background-color: var(--c-black);
   }
@@ -57,15 +53,15 @@ html{
   .bg-c-purple{
     background-color: var(--c-purple-primary);
   }
+  .bc-purple{
+    border-color: var(--c-purple-primary);
+  }
   .hover\:bg-purple-black:hover {
     background-color: var(--c-purple-black-secondary);
   }
   .hover\:bg-purple-secondary:hover {
     background-color: var(--c-purple-secondary);
   }
-  /* .hover\:fc-gray:hover {
-    color: var(--c-purple-gray);
-  } */
   .hover\:fc-purple:hover {
     color: var(--c-purple-primary);
   }

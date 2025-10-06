@@ -18,7 +18,7 @@ export default function Header() {
     ];
 
     return (
-        <header className="fixed top-0 backdrop-blur-md left-0 w-full shadow-lg z-50 font-secondary">
+        <header className="fixed top-0 backdrop-blur-lg left-0 w-full shadow-lg z-50 font-secondary">
             <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
                 {/*Nombre */}
                 <Link
