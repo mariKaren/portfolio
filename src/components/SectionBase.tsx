@@ -8,15 +8,15 @@ interface SectionBaseProps {
 
 export function SectionBase({ id, title, children }: SectionBaseProps) {
     return (
-        <section id={id} className="px-6 py-16 fc-white">
-            <div className="max-w-3xl mx-auto text-center font-secondary space-y-10">
+        <section id={id} className="py-8 fc-white">
+            <div className="max-w-4xl mx-auto text-center font-secondary space-y-10">
                 {/* Título con animación */}
                 <motion.h2
                 className="relative inline-block text-2xl md:text-4xl font-bold font-primary after:content-[''] after:block after:h-[3px] after:w-1/2 after:mx-auto after:mt-5 after:bg-purple-600 after:shadow-[0_0_8px_1px_#9333ea] after:rounded-full"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.2 }}
                 >
                 {title}
                 </motion.h2>
@@ -27,7 +27,7 @@ export function SectionBase({ id, title, children }: SectionBaseProps) {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.2 }}
                 >
                 {children}
                 </motion.div>

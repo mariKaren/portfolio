@@ -13,7 +13,7 @@ export default function Header() {
     const links:NavLink[] = [
         { name: "Sobre mí", href: "#about" },
         { name: "Proyectos", href: "#projects" },
-        { name: "Tecnologías", href: "#tecnology"},
+        { name: "Tecnologías", href: "#technology"},
         { name: "Contacto", href: "#contact" },
     ];
 
