@@ -8,7 +8,7 @@ interface SectionBaseProps {
 
 export function SectionBase({ id, title, children }: SectionBaseProps) {
     return (
-        <section id={id} className="py-8 mb-20 fc-white">
+        <section id={id} className="py-8 px-8 mb-20 fc-white">
             <div className="max-w-4xl mx-auto text-center font-secondary space-y-10">
                 {/* Título con animación */}
                 <motion.h2

@@ -45,7 +45,7 @@ export function ProjectCard({
             <div className="p-6 space-y-4">
                 <h3 className="text-xl md:text-2xl font-bold font-primary">{title}</h3>
                 {/* Para que la descripcion se ajuste a las necesidades de cada proyecto */}
-                <div className="text-justify">{children}</div>
+                <div className="text-left sm:text-justify">{children}</div>
 
                 <div className="flex flex-wrap gap-2">
                     {technologies.map((tech) => (
