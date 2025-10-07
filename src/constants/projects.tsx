@@ -1,4 +1,6 @@
 import type{ JSX } from "react";
+import bwc from '../assets/projects/bwc.png';
+
 export interface Project {
   title: string;
   image: string;
@@ -12,7 +14,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Book Worms Club",
-    image: "src/assets/projects/bwc.png",
+    image: bwc,
     technologies: ["React", "TypeScript", "Tailwind", "PHP", "MySQL","Laravel"],
     githubUrl:"https://github.com/mariKaren/bwcProyectoFinal",
     isDeployed: false,
