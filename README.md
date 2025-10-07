@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# 🌐 Portfolio — Karen Belen Mari
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido/a a mi portafolio personal, desarrollado con **React**, **TypeScript** y **Tailwind CSS**.  
+El objetivo del proyecto es mostrar mis habilidades, experiencia y proyectos destacados como Fullstack Developer.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas
 
-## React Compiler
+- ⚛️ **React** 
+- 🧩 **TypeScript**  
+- 🎨 **Tailwind CSS**  
+- 🌍 **Vite**   
+- ☁️ **Netlify** 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Estructura del proyecto
+```text
+Portfolio/
+├── src
+│     ├── assets/ # Imágenes,íconos y recursos estáticos      
+│     ├── components/ # Componentes reutilizables
+│     ├── constants/ # Datos estáticos (tecnologías, proyectos)
+│     └── App.tsx # Componente principal
+├── README.md # Documentación del proyecto
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Instalación y ejecución local
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clona el repositorio e instala las dependencias:
+
+```bash
+git clone https://github.com/mariKaren/portfolio.git
+cd portfolio
+npm install
 ```
+
+Inicia el servidor de desarrollo
+```bash
+npm run dev
+```
+## 🌐 Demo en línea
+
+Puedes ver el sitio desplegado en:  
+👉 [https://mi-portafolio.netlify.app](https://mi-portafolio.netlify.app)
+
+
+## Contacto
+
+Si quieres ponerte en contacto conmigo, puedes hacerlo a través de:
+
+- ✉️ **Email:** [kbm1999@hotmail.es](kbm1999@hotmail.es)  
+- 💼 **LinkedIn:** [linkedin.com/in/karen-mari/](https://www.linkedin.com/in/karen-mari/)  
+- 🐙 **GitHub:** [github.com/mariKaren](https://github.com/mariKaren)
+
+
+
+## Licencia
+
+Este proyecto se distribuye bajo la licencia **MIT**.¡Siéntete libre de explorarlo
+
+---
+
+¡Gracias por visitar mi portafolio!✨ Si tienes alguna pregunta o sugerencia, no dudes en contactarme. 
+
+
