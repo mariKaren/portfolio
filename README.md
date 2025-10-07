@@ -42,7 +42,7 @@ npm run dev
 ## 🌐 Demo en línea
 
 Puedes ver el sitio desplegado en:  
-👉 [https://mi-portafolio.netlify.app](https://mi-portafolio.netlify.app)
+👉 [https://mari-karen.netlify.app/](https://mari-karen.netlify.app/)
 
 
 ## Contacto
