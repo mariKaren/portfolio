@@ -25,7 +25,6 @@ export default function Header() {
                     to="hero"
                     smooth={true}
                     duration={1000}
-                    offset={-80}
                     className="text-xl font-bold font-primary fc-gray tracking-wide cursor-pointer"
                     >
                     Karen Mari

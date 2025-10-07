@@ -5,7 +5,7 @@ export default function Contact() {
     const email = "kbm1999@hotmail.es";
     const linkedinUrl = "https://www.linkedin.com/in/karen-mari/";
 
-    // Componente interno solo para esta página
+    /* Componente interno solo para esta página */
     const ButtonContact = ({
         href,
         icon,

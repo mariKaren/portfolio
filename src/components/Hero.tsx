@@ -26,7 +26,7 @@ export default function Hero() {
                 to="projects"
                 smooth={true}
                 duration={1200}
-                offset={-80}
+                offset={-80}//compensa el header fijo
                 className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg transition-colors cursor-pointer"
                 >
                     Ver proyectos <ArrowDown size={20} />

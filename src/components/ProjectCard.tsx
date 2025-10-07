@@ -22,7 +22,7 @@ export function ProjectCard({
 }: ProjectCardProps) {
     const [showAlert, setShowAlert] = useState(false);
 
-    /* si la demo esta lista se abrirá en otra pestaña y sino se dará la opción de ver el github */
+    /* Si la demo en línea está disponible, se abrirá en una nueva pestaña; de lo contrario, se ofrecerá la opción de visitar el repositorio en GitHub. */
     const handleDemoClick = () => {
         if (!isDeployed) {
         setShowAlert(true);

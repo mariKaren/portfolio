@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const containerVariants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } }, /* para que cada hijo con su variante empiece su animación 0.1s después del anterior */
+  visible: { transition: { staggerChildren: 0.1 } }, /* Para que cada hijo con su variante empiece su animación 0.1s después del anterior */
 };
 
 const itemVariants = {

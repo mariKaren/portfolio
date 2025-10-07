@@ -5,7 +5,7 @@ import { projects } from "../constants/projects";
 export default function Projects() {
     return (
         <SectionBase id="projects" title="Proyectos">
-            {/* a modificar cuando se agreguen mas proyectos */}
+            {/* A modificar la distribución del contenido cuando se agreguen más proyectos */}
             <div className="flex flex-col items-center space-y-12">
                 {projects.map((project) => (
                 <ProjectCard
