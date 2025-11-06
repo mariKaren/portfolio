@@ -40,7 +40,7 @@ export function ProjectCard({
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
         >
-            <img src={image} alt={title} className="w-full h-56 object-cover" />
+            <img src={image} alt={title} className="w-full h-56 object-cover object-top" />
 
             <div className="p-6 space-y-4">
                 <h3 className="text-xl md:text-2xl font-bold font-primary">{title}</h3>
