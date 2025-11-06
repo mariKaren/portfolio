@@ -4,12 +4,13 @@ interface SectionBaseProps {
     id: string;
     title: string;
     children: React.ReactNode;
+    maxWidth?:string;
 }
 
-export function SectionBase({ id, title, children }: SectionBaseProps) {
+export function SectionBase({ id, title, children,maxWidth="max-w-4xl" }: SectionBaseProps) {
     return (
         <section id={id} className="py-8 px-8 mb-20 fc-white">
-            <div className="max-w-4xl mx-auto text-center font-secondary space-y-10">
+            <div className={`${maxWidth} mx-auto text-center font-secondary space-y-10`}>
                 {/* Título con animación */}
                 <motion.h2
                 className="relative inline-block text-3xl md:text-4xl font-bold font-primary after:content-[''] after:block after:h-[3px] after:w-1/2 after:mx-auto after:mt-5 after:bg-purple-600 after:shadow-[0_0_8px_1px_#9333ea] after:rounded-full"
