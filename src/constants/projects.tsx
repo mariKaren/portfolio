@@ -1,5 +1,6 @@
 import type{ JSX } from "react";
 import bwc from '../assets/projects/bwc.png';
+import mlj from '../assets/projects/mlj.png';
 
 export interface Project {
   title: string;
@@ -24,5 +25,23 @@ export const projects: Project[] = [
       </>
     ),
   },
-  
+  {
+    title: "My Little Joke",
+    image: mlj,
+    technologies: ["React", "TypeScript", "Tailwind", "JokeAPI", "SweetAlert2" ],
+    githubUrl:"https://github.com/mariKaren/myLittleJoke.git",
+    isDeployed: true,
+    demoUrl:"https://mylittlejoke.netlify.app/",
+    description: (
+      <>
+        <p>
+          <strong>MyLittleJoke</strong> es una app web creada con{" "}
+          <strong>React, TypeScript</strong> y <strong>TailwindCSS</strong> que se conecta a la{" "}
+          <strong>JokeAPI</strong> para mostrar bromas por categoría. Permite guardar favoritas,
+          bloquear las no deseadas y cuenta con una 404 con humor 🎭. 
+          Incluye paginación, control de peticiones y alertas interactivas con <strong>SweetAlert2</strong>.
+        </p>
+      </>
+    ),
+  }
 ];

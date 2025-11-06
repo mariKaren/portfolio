@@ -4,9 +4,8 @@ import { projects } from "../constants/projects";
 
 export default function Projects() {
     return (
-        <SectionBase id="projects" title="Proyectos">
-            {/* A modificar la distribución del contenido cuando se agreguen más proyectos */}
-            <div className="flex flex-col items-center space-y-12">
+        <SectionBase id="projects" title="Proyectos" maxWidth="max-w-5xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 place-items-center lg:place-items-start">
                 {projects.map((project) => (
                 <ProjectCard
                     key={project.title}
