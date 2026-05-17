@@ -5,8 +5,8 @@ import { projects } from "../constants/projects";
 export default function Projects() {
     return (
         <SectionBase id="projects" title="Proyectos" maxWidth="max-w-5xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 place-items-center lg:place-items-start">
-                {projects.map((project) => (
+            <div className="space-y-12">
+                {projects.map((project, index) => (
                 <ProjectCard
                     key={project.title}
                     title={project.title}
@@ -15,6 +15,7 @@ export default function Projects() {
                     githubUrl={project.githubUrl}
                     demoUrl={project.demoUrl}
                     isDeployed={project.isDeployed}
+                    reverse={index % 2 !== 0}
                 >
                     {project.description}
                 </ProjectCard>
