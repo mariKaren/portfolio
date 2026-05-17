@@ -1,4 +1,4 @@
-import { SiJavascript, SiCss3, SiHtml5, SiReact, SiPhp, SiLaravel, SiTailwindcss, SiMysql, SiGithub, SiMongodb, SiTypescript, SiNodedotjs, SiBootstrap, SiGit } from "react-icons/si";
+import { SiJavascript, SiCss3, SiHtml5, SiReact, SiPhp, SiLaravel, SiTailwindcss, SiMysql, SiGithub, SiMongodb, SiTypescript, SiNodedotjs, SiBootstrap, SiGit, SiSupabase, SiDocker } from "react-icons/si";
 import type { IconType } from "react-icons";
 
 export interface Tech {
@@ -21,4 +21,6 @@ export const technologies: Tech[] = [
   { name: "Node.js", icon: SiNodedotjs },
   { name: "Bootstrap", icon: SiBootstrap },
   { name: "Git", icon: SiGit },
+  { name: "Supabase", icon: SiSupabase },
+  { name: "Docker", icon: SiDocker },
 ];
